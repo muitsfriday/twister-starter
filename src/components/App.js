@@ -1,15 +1,19 @@
-import React from 'react'
+import React, {Component} from 'react'
+import BodyContainer from './BodyContainer'
 
-const App = () => (
-  <div className="container">
-    <div className="jumbotron">
-      <h1 style={{ color: '#000' }}>Hello, world!</h1>
-      <p>...</p>
-      <p>
-        <a className="btn btn-primary btn-lg" href="/">Learn more</a>
-      </p>
-    </div>
-  </div>
-)
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <div>
+        <BodyContainer  />
+      </div>
+    )
+  }
+}
 
 export default App
